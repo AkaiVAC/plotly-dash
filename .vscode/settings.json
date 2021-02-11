@@ -1,0 +1,12 @@
+{
+  "python.pythonPath": "C:\\Users\\Arun.Chithambaram\\AppData\\Local\\pypoetry\\Cache\\virtualenvs\\test-dash-iWP604Cd-py3.8\\Scripts\\python.exe",
+  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Args": ["--max-line-length=88"],
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "[python]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.formatOnPaste": false
+  }
+}
