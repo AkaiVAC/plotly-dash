@@ -79,24 +79,23 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "dash"
-version = "1.21.0"
+version = "2.0.0"
 description = "A Python framework for building reactive web-apps. Developed by Plotly."
 category = "main"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+python-versions = ">=3.6"
 
 [package.dependencies]
-dash-core-components = "1.17.1"
-dash-html-components = "1.1.4"
-dash-table = "4.12.0"
+dash-core-components = "2.0.0"
+dash-html-components = "2.0.0"
+dash-table = "5.0.0"
 Flask = ">=1.0.4"
 flask-compress = "*"
-future = "*"
-plotly = "*"
+plotly = ">=5.0.0"
 
 [package.extras]
-dev = ["dash_flow_example (==0.0.5)", "dash-dangerously-set-inner-html", "flake8 (==3.9.2)", "PyYAML (==5.4.1)", "fire (==0.4.0)", "coloredlogs (==15.0.1)", "flask-talisman (==0.8.1)", "isort (==4.3.21)", "pylint (==1.9.5)", "mock (==3.0.5)", "virtualenv (==20.2.2)", "mock (==4.0.3)", "black (==21.6b0)", "pylint (==2.8.3)"]
-testing = ["pytest-sugar (>=0.9.4)", "lxml (>=4.6.2)", "selenium (>=3.141.0)", "percy (>=2.0.2)", "requests[security] (>=2.21.0)", "waitress (>=1.4.4)", "cryptography (<3.4)", "pytest (>=4.6,<5)", "pytest-mock (>=2.0.0,<3)", "beautifulsoup4 (>=4.8.2,<=4.9.3)", "pytest (>=6.0.2)", "pytest-mock (>=3.2.0)", "beautifulsoup4 (>=4.8.2)"]
+dev = ["dash-flow-example (==0.0.5)", "dash-dangerously-set-inner-html", "mock (==4.0.3)", "flake8 (==3.9.2)", "PyYAML (==5.4.1)", "pylint (==2.10.2)", "black (==21.6b0)", "fire (==0.4.0)", "coloredlogs (==15.0.1)", "flask-talisman (==0.8.1)", "isort (==4.3.21)", "orjson (==3.3.1)", "orjson (==3.6.1)"]
+testing = ["pytest (>=6.0.2)", "pytest-sugar (>=0.9.4)", "pytest-mock (>=3.2.0)", "lxml (>=4.6.2)", "selenium (>=3.141.0)", "percy (>=2.0.2)", "requests[security] (>=2.21.0)", "beautifulsoup4 (>=4.8.2)", "waitress (>=1.4.4)", "diskcache (>=5.2.1)", "multiprocess (>=0.70.12)", "redis (>=3.5.3)", "psutil (>=5.8.0)", "celery[redis] (>=5.1.2)", "flaky (>=3.7.0)", "cryptography (<3.4)"]
 
 [[package]]
 name = "dash-bootstrap-components"
@@ -114,7 +113,7 @@ pandas = ["numpy", "pandas"]
 
 [[package]]
 name = "dash-core-components"
-version = "1.17.1"
+version = "2.0.0"
 description = "Core component suite for Dash"
 category = "main"
 optional = false
@@ -122,7 +121,7 @@ python-versions = "*"
 
 [[package]]
 name = "dash-html-components"
-version = "1.1.4"
+version = "2.0.0"
 description = "Vanilla HTML components for Dash"
 category = "main"
 optional = false
@@ -130,7 +129,7 @@ python-versions = "*"
 
 [[package]]
 name = "dash-table"
-version = "4.12.0"
+version = "5.0.0"
 description = "Dash table"
 category = "main"
 optional = false
@@ -178,14 +177,6 @@ python-versions = "*"
 [package.dependencies]
 brotli = "*"
 flask = "*"
-
-[[package]]
-name = "future"
-version = "0.18.2"
-description = "Clean single-source support for Python 3 and 2"
-category = "main"
-optional = false
-python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
 [[package]]
 name = "iniconfig"
@@ -470,7 +461,7 @@ watchdog = ["watchdog"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "944d56e96bae07caffd32a11f46ebbeb61e85c0254843b3a1e36d2f1b5814ac7"
+content-hash = "d59f711a7d896874fd164d1407a8d40d485b6e256df88661f110aac060639d2a"
 
 [metadata.files]
 appdirs = [
@@ -546,20 +537,21 @@ colorama = [
     {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
 ]
 dash = [
-    {file = "dash-1.21.0.tar.gz", hash = "sha256:8b03a53e4f7a5f3eded8af099ff54d9981f7879d22d74c7970b9a27c8f698ebb"},
+    {file = "dash-2.0.0-py3-none-any.whl", hash = "sha256:23f331533663641a5c70a15c46da26d29ef5335f9aeb8bc03d09de865fc7cd62"},
+    {file = "dash-2.0.0.tar.gz", hash = "sha256:29277c24e2f795b069cb102ce1ab0cd3ad5cf9d3b4fd16c03da9671a5eea28a4"},
 ]
 dash-bootstrap-components = [
     {file = "dash-bootstrap-components-0.12.2.tar.gz", hash = "sha256:b3266967f16d542ce715fd8ea0ed082b56e64dfa623750bf8150b72fe7b303ff"},
     {file = "dash_bootstrap_components-0.12.2-py3-none-any.whl", hash = "sha256:4f697a0996e458a17859614a429f093ab0e143ab359b825e7ac0c1625738c2c8"},
 ]
 dash-core-components = [
-    {file = "dash_core_components-1.17.1.tar.gz", hash = "sha256:7e503f5eddb63034dd20c23d218cc0d8a81ec88e9a15b7cbc60e266b0e2b60a9"},
+    {file = "dash_core_components-2.0.0.tar.gz", hash = "sha256:c6733874af975e552f95a1398a16c2ee7df14ce43fa60bb3718a3c6e0b63ffee"},
 ]
 dash-html-components = [
-    {file = "dash_html_components-1.1.4.tar.gz", hash = "sha256:dc4f423e13716d179d51a42b3c7e2a2ed02e05185c742f88214b58d59e24bbd4"},
+    {file = "dash_html_components-2.0.0.tar.gz", hash = "sha256:8703a601080f02619a6390998e0b3da4a5daabe97a1fd7a9cebc09d015f26e50"},
 ]
 dash-table = [
-    {file = "dash_table-4.12.0.tar.gz", hash = "sha256:4c99689a887bfd035278b14ecd5db70706023389e53735d5e3cccc416facdbe4"},
+    {file = "dash_table-5.0.0.tar.gz", hash = "sha256:18624d693d4c8ef2ddec99a6f167593437a7ea0bf153aa20f318c170c5bc7308"},
 ]
 flake8 = [
     {file = "flake8-3.9.2-py2.py3-none-any.whl", hash = "sha256:bf8fd333346d844f616e8d47905ef3a3384edae6b4e9beb0c5101e25e3110907"},
@@ -572,9 +564,6 @@ flask = [
 flask-compress = [
     {file = "Flask-Compress-1.10.1.tar.gz", hash = "sha256:28352387efbbe772cfb307570019f81957a13ff718d994a9125fa705efb73680"},
     {file = "Flask_Compress-1.10.1-py3-none-any.whl", hash = "sha256:a6c2d1ff51771e9b39d7a612754f4cb4e8af20cebe16b02fd19d98d8dd6966e5"},
-]
-future = [
-    {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
 ]
 iniconfig = [
     {file = "iniconfig-1.1.1-py2.py3-none-any.whl", hash = "sha256:011e24c64b7f47f6ebd835bb12a743f2fbe9a26d4cecaa7f53bc4f35ee9da8b3"},

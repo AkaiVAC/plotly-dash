@@ -7,8 +7,9 @@ authors = ["Arun Chithambaram <arun.chithambaram@bridgeinternationalacademies.co
 [tool.poetry.dependencies]
 python = "^3.8"
 Flask = "^2.0.0"
-dash = "^1.19.0"
+dash = "^2.0.0"
 dash-bootstrap-components = "^1.0.0"
+
 pandas = "^1.2.2"
 numpy = "^1.20.1"
 
